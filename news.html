@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Blog - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Hero -->
+    <section class="news-hero">
+        <div class="news-hero-visual">
+            <div class="news-waves"></div>
+        </div>
+        <div class="container">
+            <div class="news-hero-content">
+                <h1 class="news-title-3d">News & Blog</h1>
+                <p class="news-subtitle">Stay updated with the latest research news, insights, and announcements</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Filters -->
+    <section class="news-filters-section">
+        <div class="container">
+            <div class="news-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search articles..." id="newsSearch">
+                </div>
+                <div class="category-filters">
+                    <button class="cat-btn active" data-category="all">All</button>
+                    <button class="cat-btn" data-category="research">Research</button>
+                    <button class="cat-btn" data-category="announcements">Announcements</button>
+                    <button class="cat-btn" data-category="awards">Awards</button>
+                    <button class="cat-btn" data-category="collaborations">Collaborations</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article-section">
+        <div class="container">
+            <article class="featured-article featured-3d">
+                <div class="featured-image">
+                    <div class="featured-overlay"></div>
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="article-meta">
+                        <span class="article-date">March 15, 2024</span>
+                        <span class="article-category">Research</span>
+                    </div>
+                    <h2>Breakthrough in Quantum Computing Achieves New Milestone</h2>
+                    <p>Our research team has achieved a significant breakthrough in quantum algorithm development, demonstrating unprecedented computational capabilities that could revolutionize multiple industries.</p>
+                    <a href="article-detail.html?id=1" class="read-more-btn">Read Full Article →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title-3d">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-article article-3d" data-category="announcements">
+                    <div class="article-image">
+                        <div class="article-overlay"></div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">March 10, 2024</span>
+                            <span class="article-category">Announcements</span>
+                        </div>
+                        <h3>International Collaboration Announced</h3>
+                        <p>Partnership with leading institutions to advance climate research and develop sustainable solutions for global challenges.</p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="author-avatar"></div>
+                                <span>Dr. Sarah Johnson</span>
+                            </div>
+                            <a href="article-detail.html?id=2" class="article-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-article article-3d" data-category="awards">
+                    <div class="article-image">
+                        <div class="article-overlay"></div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">March 5, 2024</span>
+                            <span class="article-category">Awards</span>
+                        </div>
+                        <h3>Research Team Receives Prestigious Award</h3>
+                        <p>Our team has been recognized for outstanding contributions to genomic research with the International Research Excellence Award.</p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="author-avatar"></div>
+                                <span>Dr. Michael Chen</span>
+                            </div>
+                            <a href="article-detail.html?id=3" class="article-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-article article-3d" data-category="research">
+                    <div class="article-image">
+                        <div class="article-overlay"></div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 28, 2024</span>
+                            <span class="article-category">Research</span>
+                        </div>
+                        <h3>New Lab Facility Opens</h3>
+                        <p>State-of-the-art research facility now operational, providing cutting-edge equipment for advanced scientific research.</p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="author-avatar"></div>
+                                <span>Dr. Emily Rodriguez</span>
+                            </div>
+                            <a href="article-detail.html?id=4" class="article-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-article article-3d" data-category="collaborations">
+                    <div class="article-image">
+                        <div class="article-overlay"></div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">February 20, 2024</span>
+                            <span class="article-category">Collaborations</span>
+                        </div>
+                        <h3>Industry Partnership for AI Research</h3>
+                        <p>New collaboration with tech industry leaders to accelerate AI research and development of innovative solutions.</p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="author-avatar"></div>
+                                <span>Dr. Robert Taylor</span>
+                            </div>
+                            <a href="article-detail.html?id=5" class="article-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
+

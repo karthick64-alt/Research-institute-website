@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Institute - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Effect -->
+    <section class="hero-section">
+        <div class="hero-3d-container">
+            <canvas id="heroCanvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-text-3d">
+                    <h1 class="hero-title">
+                        <span class="title-word" data-word="Advancing">Advancing</span>
+                        <span class="title-word" data-word="Knowledge">Knowledge</span>
+                        <span class="title-word" data-word="Through">Through</span>
+                        <span class="title-word" data-word="Innovation">Innovation</span>
+                    </h1>
+                    <p class="hero-subtitle">Pioneering research that shapes the future</p>
+                    <div class="hero-buttons">
+                        <a href="research.html" class="btn btn-primary btn-3d">Explore Research</a>
+                        <a href="about.html" class="btn btn-secondary btn-3d">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+    </section>
+
+    <!-- Featured Research Section -->
+    <section class="featured-research">
+        <div class="container">
+            <h2 class="section-title-3d">Featured Research</h2>
+            <div class="research-grid">
+                <div class="research-card card-3d" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-dna"></i></div>
+                            <h3>Genomic Research</h3>
+                            <p>Revolutionary discoveries in genetic engineering</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Genomic Research</h3>
+                            <p>Our team has made significant breakthroughs in understanding genetic mutations and their implications for personalized medicine.</p>
+                            <a href="research.html#genomic" class="card-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-card card-3d" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                            <h3>AI & Machine Learning</h3>
+                            <p>Next-generation artificial intelligence systems</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>AI & Machine Learning</h3>
+                            <p>Developing cutting-edge AI models that solve complex real-world problems across multiple domains.</p>
+                            <a href="research.html#ai" class="card-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-card card-3d" data-tilt>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                            <h3>Climate Science</h3>
+                            <p>Sustainable solutions for environmental challenges</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Climate Science</h3>
+                            <p>Researching innovative approaches to combat climate change and promote environmental sustainability.</p>
+                            <a href="research.html#climate" class="card-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section with 3D Counter -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card stat-3d">
+                    <div class="stat-icon"><i class="fas fa-flask"></i></div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Active Projects</div>
+                </div>
+                <div class="stat-card stat-3d">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Researchers</div>
+                </div>
+                <div class="stat-card stat-3d">
+                    <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+                <div class="stat-card stat-3d">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="stat-number" data-target="85">0</div>
+                    <div class="stat-label">Awards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="latest-news">
+        <div class="container">
+            <h2 class="section-title-3d">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-card news-3d">
+                    <div class="news-image">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">March 15, 2024</span>
+                        <h3>Breakthrough in Quantum Computing</h3>
+                        <p>Our researchers achieve new milestone in quantum algorithm development...</p>
+                        <a href="news.html#quantum" class="news-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card news-3d">
+                    <div class="news-image">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">March 10, 2024</span>
+                        <h3>International Collaboration Announced</h3>
+                        <p>Partnership with leading institutions to advance climate research...</p>
+                        <a href="news.html#collab" class="news-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card news-3d">
+                    <div class="news-image">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">March 5, 2024</span>
+                        <h3>New Lab Facility Opens</h3>
+                        <p>State-of-the-art research facility now operational...</p>
+                        <a href="news.html#lab" class="news-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
+

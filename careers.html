@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Careers Hero -->
+    <section class="careers-hero">
+        <div class="careers-hero-visual">
+            <div class="career-shapes">
+                <div class="career-shape shape-1"></div>
+                <div class="career-shape shape-2"></div>
+                <div class="career-shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="careers-hero-content">
+                <h1 class="careers-title-3d">Join Our Team</h1>
+                <p class="careers-subtitle">Shape the future of research and innovation with us</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="jobs-section">
+        <div class="container">
+            <div class="jobs-header">
+                <h2 class="section-title-3d">Open Positions</h2>
+                <div class="jobs-filters">
+                    <select id="departmentFilter" class="filter-select">
+                        <option value="all">All Departments</option>
+                        <option value="research">Research</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="data">Data Science</option>
+                        <option value="admin">Administration</option>
+                    </select>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="fulltime">Full-time</option>
+                        <option value="parttime">Part-time</option>
+                        <option value="internship">Internship</option>
+                        <option value="visiting">Visiting Researcher</option>
+                    </select>
+                </div>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-card job-3d" data-department="research" data-type="fulltime">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="job-badges">
+                            <span class="job-badge fulltime">Full-time</span>
+                            <span class="job-badge department">Research</span>
+                        </div>
+                    </div>
+                    <h3>Senior Research Scientist</h3>
+                    <p class="job-location"><i class="fas fa-map-marker-alt"></i> Science City, SC</p>
+                    <p class="job-description">Lead innovative research projects in genomic science and contribute to groundbreaking discoveries.</p>
+                    <div class="job-requirements">
+                        <span class="req-tag">PhD Required</span>
+                        <span class="req-tag">5+ Years Experience</span>
+                    </div>
+                    <div class="job-actions">
+                        <a href="job-detail.html?id=1" class="job-btn">View Details</a>
+                        <button class="job-btn apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="job-card job-3d" data-department="engineering" data-type="fulltime">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="job-badges">
+                            <span class="job-badge fulltime">Full-time</span>
+                            <span class="job-badge department">Engineering</span>
+                        </div>
+                    </div>
+                    <h3>Machine Learning Engineer</h3>
+                    <p class="job-location"><i class="fas fa-map-marker-alt"></i> Science City, SC</p>
+                    <p class="job-description">Develop and implement ML models for research applications and data analysis.</p>
+                    <div class="job-requirements">
+                        <span class="req-tag">Master's Degree</span>
+                        <span class="req-tag">3+ Years Experience</span>
+                    </div>
+                    <div class="job-actions">
+                        <a href="job-detail.html?id=2" class="job-btn">View Details</a>
+                        <button class="job-btn apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="job-card job-3d" data-department="data" data-type="internship">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="job-badges">
+                            <span class="job-badge internship">Internship</span>
+                            <span class="job-badge department">Data Science</span>
+                        </div>
+                    </div>
+                    <h3>Data Science Intern</h3>
+                    <p class="job-location"><i class="fas fa-map-marker-alt"></i> Science City, SC</p>
+                    <p class="job-description">Gain hands-on experience working with large datasets and research projects.</p>
+                    <div class="job-requirements">
+                        <span class="req-tag">Bachelor's Degree</span>
+                        <span class="req-tag">Python/R Required</span>
+                    </div>
+                    <div class="job-actions">
+                        <a href="job-detail.html?id=3" class="job-btn">View Details</a>
+                        <button class="job-btn apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="job-card job-3d" data-department="research" data-type="visiting">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="job-badges">
+                            <span class="job-badge visiting">Visiting Researcher</span>
+                            <span class="job-badge department">Research</span>
+                        </div>
+                    </div>
+                    <h3>Visiting Research Fellow</h3>
+                    <p class="job-location"><i class="fas fa-map-marker-alt"></i> Science City, SC</p>
+                    <p class="job-description">Collaborate on research projects and contribute to ongoing studies.</p>
+                    <div class="job-requirements">
+                        <span class="req-tag">PhD Preferred</span>
+                        <span class="req-tag">Research Experience</span>
+                    </div>
+                    <div class="job-actions">
+                        <a href="job-detail.html?id=4" class="job-btn">View Details</a>
+                        <button class="job-btn apply-btn">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Programs -->
+    <section class="internships-section">
+        <div class="container">
+            <h2 class="section-title-3d">Internship Programs</h2>
+            <div class="internships-grid">
+                <div class="internship-card internship-3d">
+                    <div class="internship-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Summer Research Program</h3>
+                    <p>10-week intensive research program for undergraduate and graduate students.</p>
+                    <ul class="internship-benefits">
+                        <li><i class="fas fa-check"></i> Mentorship from leading researchers</li>
+                        <li><i class="fas fa-check"></i> Hands-on research experience</li>
+                        <li><i class="fas fa-check"></i> Stipend provided</li>
+                    </ul>
+                    <a href="#" class="internship-link">Learn More →</a>
+                </div>
+                <div class="internship-card internship-3d">
+                    <div class="internship-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Lab Assistant Program</h3>
+                    <p>Part-time positions for students interested in laboratory work and research support.</p>
+                    <ul class="internship-benefits">
+                        <li><i class="fas fa-check"></i> Flexible schedule</li>
+                        <li><i class="fas fa-check"></i> Lab experience</li>
+                        <li><i class="fas fa-check"></i> Academic credit available</li>
+                    </ul>
+                    <a href="#" class="internship-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/careers.js"></script>
+</body>
+</html>
+

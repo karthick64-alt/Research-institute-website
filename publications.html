@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Publications Hero -->
+    <section class="publications-hero">
+        <div class="publications-hero-bg">
+            <canvas id="publicationsCanvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="publications-hero-content">
+                <h1 class="publications-title-3d">Publications</h1>
+                <p class="publications-subtitle">Discover our research contributions to the scientific community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters and Search -->
+    <section class="publications-filters-section">
+        <div class="container">
+            <div class="publications-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search publications..." id="pubSearch">
+                </div>
+                <div class="filter-group">
+                    <select id="yearFilter" class="filter-select">
+                        <option value="all">All Years</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="journal">Journal Articles</option>
+                        <option value="conference">Conference Papers</option>
+                        <option value="report">Reports</option>
+                        <option value="whitepaper">Whitepapers</option>
+                    </select>
+                    <select id="topicFilter" class="filter-select">
+                        <option value="all">All Topics</option>
+                        <option value="genomic">Genomic Research</option>
+                        <option value="ai">AI & ML</option>
+                        <option value="climate">Climate Science</option>
+                        <option value="quantum">Quantum Computing</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications List -->
+    <section class="publications-section">
+        <div class="container">
+            <div class="publications-list">
+                <article class="publication-item pub-3d">
+                    <div class="publication-header">
+                        <div class="pub-type-badge journal">Journal</div>
+                        <div class="pub-year">2024</div>
+                    </div>
+                    <h3 class="pub-title">Advanced Genomic Sequencing Techniques in Personalized Medicine</h3>
+                    <p class="pub-authors">Sarah Johnson, Michael Chen, Emily Rodriguez, et al.</p>
+                    <p class="pub-venue">Nature Genetics, Vol. 56, Issue 3</p>
+                    <p class="pub-abstract">This study presents novel genomic sequencing methods that significantly improve accuracy and speed in personalized medicine applications...</p>
+                    <div class="pub-meta">
+                        <span class="pub-doi"><i class="fas fa-link"></i> DOI: 10.1038/ng.2024.123</span>
+                        <div class="pub-actions">
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="APA">APA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="MLA">MLA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="Chicago">Chicago</button>
+                            <a href="#" class="pub-btn download-btn"><i class="fas fa-download"></i> PDF</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication-item pub-3d">
+                    <div class="publication-header">
+                        <div class="pub-type-badge conference">Conference</div>
+                        <div class="pub-year">2024</div>
+                    </div>
+                    <h3 class="pub-title">Machine Learning Algorithms for Drug Discovery</h3>
+                    <p class="pub-authors">Michael Chen, David Kim, Lisa Anderson</p>
+                    <p class="pub-venue">ICML 2024 - International Conference on Machine Learning</p>
+                    <p class="pub-abstract">We propose a novel deep learning framework for accelerating pharmaceutical drug discovery processes...</p>
+                    <div class="pub-meta">
+                        <span class="pub-doi"><i class="fas fa-link"></i> DOI: 10.1109/ICML.2024.456</span>
+                        <div class="pub-actions">
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="APA">APA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="MLA">MLA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="Chicago">Chicago</button>
+                            <a href="#" class="pub-btn download-btn"><i class="fas fa-download"></i> PDF</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication-item pub-3d">
+                    <div class="publication-header">
+                        <div class="pub-type-badge report">Report</div>
+                        <div class="pub-year">2023</div>
+                    </div>
+                    <h3 class="pub-title">Climate Change Impact Assessment: A Comprehensive Analysis</h3>
+                    <p class="pub-authors">Emily Rodriguez, Robert Taylor, James Wilson</p>
+                    <p class="pub-venue">Research Institute Technical Report TR-2023-045</p>
+                    <p class="pub-abstract">This comprehensive report analyzes the long-term impacts of climate change across multiple regions...</p>
+                    <div class="pub-meta">
+                        <span class="pub-doi"><i class="fas fa-link"></i> DOI: 10.1000/RI.2023.045</span>
+                        <div class="pub-actions">
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="APA">APA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="MLA">MLA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="Chicago">Chicago</button>
+                            <a href="#" class="pub-btn download-btn"><i class="fas fa-download"></i> PDF</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="publication-item pub-3d">
+                    <div class="publication-header">
+                        <div class="pub-type-badge journal">Journal</div>
+                        <div class="pub-year">2023</div>
+                    </div>
+                    <h3 class="pub-title">Quantum Algorithm Optimization for Complex Systems</h3>
+                    <p class="pub-authors">Robert Taylor, Maria Garcia, David Kim</p>
+                    <p class="pub-venue">Physical Review Quantum, Vol. 5, Issue 2</p>
+                    <p class="pub-abstract">We present optimized quantum algorithms that demonstrate significant improvements in solving complex optimization problems...</p>
+                    <div class="pub-meta">
+                        <span class="pub-doi"><i class="fas fa-link"></i> DOI: 10.1103/PRQuantum.5.023456</span>
+                        <div class="pub-actions">
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="APA">APA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="MLA">MLA</button>
+                            <button class="pub-btn" onclick="copyCitation(this)" data-citation="Chicago">Chicago</button>
+                            <a href="#" class="pub-btn download-btn"><i class="fas fa-download"></i> PDF</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>
+

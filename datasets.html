@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets & Resources - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/datasets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html" class="active">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Datasets Hero -->
+    <section class="datasets-hero">
+        <div class="datasets-hero-visual">
+            <div class="data-particles" id="dataParticles"></div>
+        </div>
+        <div class="container">
+            <div class="datasets-hero-content">
+                <h1 class="datasets-title-3d">Datasets & Resources</h1>
+                <p class="datasets-subtitle">Access our curated collection of research datasets and resources</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="datasets-filters-section">
+        <div class="container">
+            <div class="datasets-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search datasets..." id="datasetSearch">
+                </div>
+                <div class="filter-group">
+                    <select id="licenseFilter" class="filter-select">
+                        <option value="all">All Licenses</option>
+                        <option value="open">Open Access</option>
+                        <option value="cc">Creative Commons</option>
+                        <option value="restricted">Restricted</option>
+                    </select>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="genomic">Genomic Data</option>
+                        <option value="climate">Climate Data</option>
+                        <option value="ai">AI/ML Datasets</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Catalog -->
+    <section class="datasets-section">
+        <div class="container">
+            <h2 class="section-title-3d">Dataset Catalog</h2>
+            <div class="datasets-grid">
+                <div class="dataset-card dataset-3d" data-license="open" data-category="genomic">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="dataset-badge open">Open Access</div>
+                    </div>
+                    <h3>Genomic Variant Database</h3>
+                    <p class="dataset-description">Comprehensive database of genetic variants with annotations and clinical significance data.</p>
+                    <div class="dataset-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>2.5 GB</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>1,240 Downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Updated: 2024-03</span>
+                        </div>
+                    </div>
+                    <div class="dataset-license">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>CC BY 4.0</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="dataset-detail.html?id=1" class="dataset-btn">View Details</a>
+                        <button class="dataset-btn download-btn"><i class="fas fa-download"></i> Download</button>
+                    </div>
+                </div>
+                <div class="dataset-card dataset-3d" data-license="open" data-category="climate">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="dataset-badge open">Open Access</div>
+                    </div>
+                    <h3>Climate Change Indicators</h3>
+                    <p class="dataset-description">Long-term climate data including temperature, precipitation, and extreme weather events.</p>
+                    <div class="dataset-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>850 MB</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>890 Downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Updated: 2024-02</span>
+                        </div>
+                    </div>
+                    <div class="dataset-license">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>CC BY-SA 4.0</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="dataset-detail.html?id=2" class="dataset-btn">View Details</a>
+                        <button class="dataset-btn download-btn"><i class="fas fa-download"></i> Download</button>
+                    </div>
+                </div>
+                <div class="dataset-card dataset-3d" data-license="cc" data-category="ai">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="dataset-badge cc">Creative Commons</div>
+                    </div>
+                    <h3>Machine Learning Benchmark Dataset</h3>
+                    <p class="dataset-description">Large-scale dataset for training and evaluating ML models across multiple domains.</p>
+                    <div class="dataset-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>15.2 GB</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>2,150 Downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Updated: 2024-01</span>
+                        </div>
+                    </div>
+                    <div class="dataset-license">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>CC BY-NC 4.0</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="dataset-detail.html?id=3" class="dataset-btn">View Details</a>
+                        <button class="dataset-btn download-btn"><i class="fas fa-download"></i> Download</button>
+                    </div>
+                </div>
+                <div class="dataset-card dataset-3d" data-license="restricted" data-category="genomic">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="dataset-badge restricted">Restricted</div>
+                    </div>
+                    <h3>Clinical Genomic Data</h3>
+                    <p class="dataset-description">Anonymized clinical genomic data requiring approval for access.</p>
+                    <div class="dataset-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>5.8 GB</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>156 Downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Updated: 2024-03</span>
+                        </div>
+                    </div>
+                    <div class="dataset-license">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Restricted License</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="dataset-detail.html?id=4" class="dataset-btn">Request Access</a>
+                        <button class="dataset-btn download-btn" disabled><i class="fas fa-lock"></i> Login Required</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Library -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title-3d">Resource Library</h2>
+            <div class="resources-grid">
+                <div class="resource-card resource-3d">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-powerpoint"></i>
+                    </div>
+                    <h3>Presentations</h3>
+                    <p>Conference presentations and slides</p>
+                    <a href="#" class="resource-link">Browse →</a>
+                </div>
+                <div class="resource-card resource-3d">
+                    <div class="resource-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Code Repositories</h3>
+                    <p>Open source code and software tools</p>
+                    <a href="#" class="resource-link">Browse →</a>
+                </div>
+                <div class="resource-card resource-3d">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Protocols</h3>
+                    <p>Research protocols and methodologies</p>
+                    <a href="#" class="resource-link">Browse →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/datasets.js"></script>
+</body>
+</html>
+

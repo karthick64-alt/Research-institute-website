@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Seminars - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Hero -->
+    <section class="events-hero">
+        <div class="events-hero-visual">
+            <div class="calendar-grid"></div>
+        </div>
+        <div class="container">
+            <div class="events-hero-content">
+                <h1 class="events-title-3d">Events & Seminars</h1>
+                <p class="events-subtitle">Join us for upcoming conferences, seminars, and workshops</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="events-filters-section">
+        <div class="container">
+            <div class="events-controls">
+                <div class="event-type-filters">
+                    <button class="type-btn active" data-type="all">All Events</button>
+                    <button class="type-btn" data-type="conference">Conferences</button>
+                    <button class="type-btn" data-type="seminar">Seminars</button>
+                    <button class="type-btn" data-type="workshop">Workshops</button>
+                    <button class="type-btn" data-type="webinar">Webinars</button>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title-3d">Upcoming Events</h2>
+            <div class="events-grid" id="eventsGrid">
+                <div class="event-card event-3d" data-type="conference">
+                    <div class="event-date">
+                        <div class="date-day">15</div>
+                        <div class="date-month">Mar</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-badge conference">Conference</div>
+                        <h3>International Research Conference 2024</h3>
+                        <p class="event-description">Join leading researchers from around the world for presentations on cutting-edge research across multiple disciplines.</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Main Auditorium</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>250 Registered</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=1" class="event-btn">View Details</a>
+                            <button class="event-btn register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card event-3d" data-type="seminar">
+                    <div class="event-date">
+                        <div class="date-day">22</div>
+                        <div class="date-month">Mar</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-badge seminar">Seminar</div>
+                        <h3>AI in Healthcare: Current Trends</h3>
+                        <p class="event-description">Expert panel discussion on the latest developments in AI applications for healthcare and medical research.</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2:00 PM - 4:00 PM</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Seminar Hall B</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>80 Registered</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=2" class="event-btn">View Details</a>
+                            <button class="event-btn register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card event-3d" data-type="workshop">
+                    <div class="event-date">
+                        <div class="date-day">28</div>
+                        <div class="date-month">Mar</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-badge workshop">Workshop</div>
+                        <h3>Data Science Workshop</h3>
+                        <p class="event-description">Hands-on workshop covering data analysis, machine learning, and visualization techniques.</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>10:00 AM - 3:00 PM</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Lab 3</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>30 Registered</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=3" class="event-btn">View Details</a>
+                            <button class="event-btn register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card event-3d" data-type="webinar">
+                    <div class="event-date">
+                        <div class="date-day">05</div>
+                        <div class="date-month">Apr</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-badge webinar">Webinar</div>
+                        <h3>Climate Science Webinar Series</h3>
+                        <p class="event-description">Online webinar series exploring climate change research and sustainable solutions.</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>3:00 PM - 4:30 PM</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>Online</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>150 Registered</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="event-detail.html?id=4" class="event-btn">View Details</a>
+                            <button class="event-btn register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>
+

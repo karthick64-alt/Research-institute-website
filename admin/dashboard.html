@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Research Institute</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Admin</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="content.html" class="nav-item">
+                <i class="fas fa-edit"></i>
+                <span>Content Management</span>
+            </a>
+            <a href="research-mgmt.html" class="nav-item">
+                <i class="fas fa-flask"></i>
+                <span>Research Management</span>
+            </a>
+            <a href="people.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>People & Users</span>
+            </a>
+            <a href="grants.html" class="nav-item">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Grants & Funding</span>
+            </a>
+            <a href="events-mgmt.html" class="nav-item">
+                <i class="fas fa-calendar"></i>
+                <span>Events</span>
+            </a>
+            <a href="submissions.html" class="nav-item">
+                <i class="fas fa-inbox"></i>
+                <span>Submissions</span>
+            </a>
+            <a href="crm.html" class="nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>CRM & Communications</span>
+            </a>
+            <a href="files.html" class="nav-item">
+                <i class="fas fa-folder"></i>
+                <span>File Manager</span>
+            </a>
+            <a href="settings.html" class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Top Bar -->
+        <header class="admin-header">
+            <div class="header-left">
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <button class="header-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <button class="header-btn">
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card admin-stat-3d">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12,450</h3>
+                        <p>Total Visitors</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card admin-stat-3d">
+                    <div class="stat-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3,240</h3>
+                        <p>Publication Downloads</p>
+                        <span class="stat-change positive">+8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-card admin-stat-3d">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>150</h3>
+                        <p>Active Projects</p>
+                        <span class="stat-change positive">+5</span>
+                    </div>
+                </div>
+                <div class="stat-card admin-stat-3d">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>45</h3>
+                        <p>Event Registrations</p>
+                        <span class="stat-change positive">+15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts and Analytics -->
+            <div class="analytics-grid">
+                <div class="chart-card admin-card-3d">
+                    <h2>Visitor Analytics</h2>
+                    <div class="chart-placeholder">
+                        <canvas id="visitorChart"></canvas>
+                    </div>
+                    <div class="chart-controls">
+                        <button class="chart-btn active" data-range="7d">7 Days</button>
+                        <button class="chart-btn" data-range="30d">30 Days</button>
+                        <button class="chart-btn" data-range="90d">90 Days</button>
+                    </div>
+                </div>
+                <div class="chart-card admin-card-3d">
+                    <h2>Publication Downloads</h2>
+                    <div class="chart-placeholder">
+                        <canvas id="downloadChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="activity-section">
+                <div class="activity-card admin-card-3d">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>New user registered</strong></p>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>New publication uploaded</strong></p>
+                                <span>5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-calendar-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Event created</strong></p>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
+

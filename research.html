@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Labs - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research Hero -->
+    <section class="research-hero">
+        <div class="research-hero-bg">
+            <div class="research-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="research-hero-content">
+                <h1 class="research-title-3d">Research & Laboratories</h1>
+                <p class="research-subtitle">Exploring the frontiers of knowledge across multiple disciplines</p>
+                <div class="research-search">
+                    <input type="text" placeholder="Search research topics..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Topics Filter -->
+    <section class="topics-filter-section">
+        <div class="container">
+            <div class="topics-filter">
+                <button class="topic-tag active" data-topic="all">All Topics</button>
+                <button class="topic-tag" data-topic="genomic">Genomic Research</button>
+                <button class="topic-tag" data-topic="ai">AI & Machine Learning</button>
+                <button class="topic-tag" data-topic="climate">Climate Science</button>
+                <button class="topic-tag" data-topic="quantum">Quantum Computing</button>
+                <button class="topic-tag" data-topic="biotech">Biotechnology</button>
+                <button class="topic-tag" data-topic="materials">Materials Science</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs & Centers -->
+    <section class="labs-section">
+        <div class="container">
+            <h2 class="section-title-3d">Labs & Research Centers</h2>
+            <div class="labs-grid">
+                <div class="lab-card lab-3d" data-topic="genomic">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>Genomic Research Lab</h3>
+                        <p class="lab-lead">Lead: Dr. Sarah Johnson</p>
+                        <p class="lab-description">Advancing understanding of genetic mechanisms and their applications in personalized medicine.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>25 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>12 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=genomic" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+                <div class="lab-card lab-3d" data-topic="ai">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>AI & Machine Learning Lab</h3>
+                        <p class="lab-lead">Lead: Dr. Michael Chen</p>
+                        <p class="lab-description">Developing next-generation AI systems and machine learning algorithms.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>30 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>18 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=ai" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+                <div class="lab-card lab-3d" data-topic="climate">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>Climate Science Center</h3>
+                        <p class="lab-lead">Lead: Dr. Emily Rodriguez</p>
+                        <p class="lab-description">Researching climate change impacts and developing sustainable solutions.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>20 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>15 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=climate" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+                <div class="lab-card lab-3d" data-topic="quantum">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>Quantum Computing Lab</h3>
+                        <p class="lab-lead">Lead: Dr. Robert Taylor</p>
+                        <p class="lab-description">Pioneering research in quantum algorithms and quantum information processing.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>18 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>10 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=quantum" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+                <div class="lab-card lab-3d" data-topic="biotech">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>Biotechnology Lab</h3>
+                        <p class="lab-lead">Lead: Dr. Lisa Anderson</p>
+                        <p class="lab-description">Innovative biotech solutions for healthcare and agriculture.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>22 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>14 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=biotech" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+                <div class="lab-card lab-3d" data-topic="materials">
+                    <div class="lab-card-inner">
+                        <div class="lab-header">
+                            <div class="lab-icon-wrapper">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="lab-badge">Active</div>
+                        </div>
+                        <h3>Materials Science Lab</h3>
+                        <p class="lab-lead">Lead: Dr. David Kim</p>
+                        <p class="lab-description">Developing advanced materials for next-generation technologies.</p>
+                        <div class="lab-stats">
+                            <div class="lab-stat">
+                                <i class="fas fa-users"></i>
+                                <span>16 Members</span>
+                            </div>
+                            <div class="lab-stat">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>9 Projects</span>
+                            </div>
+                        </div>
+                        <a href="lab-detail.html?id=materials" class="lab-link">View Lab Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Topics Index -->
+    <section class="topics-index-section">
+        <div class="container">
+            <h2 class="section-title-3d">Research Topics</h2>
+            <div class="topics-index-grid">
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-dna"></i>
+                        <h4>Genomic Research</h4>
+                        <p>15 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>Genomic Research</h4>
+                        <p>Exploring genetic variations, mutations, and their implications for disease and treatment.</p>
+                        <a href="publications.html?topic=genomic">View Publications →</a>
+                    </div>
+                </div>
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-brain"></i>
+                        <h4>AI & ML</h4>
+                        <p>28 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>AI & Machine Learning</h4>
+                        <p>Advancing artificial intelligence through novel algorithms and applications.</p>
+                        <a href="publications.html?topic=ai">View Publications →</a>
+                    </div>
+                </div>
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Climate Science</h4>
+                        <p>22 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>Climate Science</h4>
+                        <p>Understanding climate change and developing sustainable solutions.</p>
+                        <a href="publications.html?topic=climate">View Publications →</a>
+                    </div>
+                </div>
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-atom"></i>
+                        <h4>Quantum Computing</h4>
+                        <p>18 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>Quantum Computing</h4>
+                        <p>Pioneering quantum algorithms and quantum information systems.</p>
+                        <a href="publications.html?topic=quantum">View Publications →</a>
+                    </div>
+                </div>
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-flask"></i>
+                        <h4>Biotechnology</h4>
+                        <p>20 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>Biotechnology</h4>
+                        <p>Innovative biotech solutions for healthcare and agriculture.</p>
+                        <a href="publications.html?topic=biotech">View Publications →</a>
+                    </div>
+                </div>
+                <div class="topic-item topic-3d">
+                    <div class="topic-content">
+                        <i class="fas fa-cube"></i>
+                        <h4>Materials Science</h4>
+                        <p>16 Publications</p>
+                    </div>
+                    <div class="topic-hover-content">
+                        <h4>Materials Science</h4>
+                        <p>Developing advanced materials for technological applications.</p>
+                        <a href="publications.html?topic=materials">View Publications →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/research.js"></script>
+</body>
+</html>
+

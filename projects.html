@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Research Institute</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-text">RI</span>
+                </div>
+                <span class="logo-name">Research Institute</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="datasets.html">Datasets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">EN</button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="projects-hero-visual">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 class="projects-title-3d">Research Projects</h1>
+                <p class="projects-subtitle">Transforming ideas into impactful innovations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters-section">
+        <div class="container">
+            <div class="project-filters">
+                <button class="filter-btn active" data-status="all">All Projects</button>
+                <button class="filter-btn" data-status="active">Active</button>
+                <button class="filter-btn" data-status="completed">Completed</button>
+                <button class="filter-btn" data-status="upcoming">Upcoming</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card project-3d" data-status="active">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status active">Active</span>
+                            <div class="project-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                        </div>
+                        <h3>Genomic Sequencing Initiative</h3>
+                        <p class="project-description">Advanced genomic research to understand genetic variations and their implications.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023 - 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$2.5M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+12</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=1" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card project-3d" data-status="active">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status active">Active</span>
+                            <div class="project-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <h3>AI-Powered Drug Discovery</h3>
+                        <p class="project-description">Machine learning algorithms for accelerating pharmaceutical research.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024 - 2026</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$3.2M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+15</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=2" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card project-3d" data-status="completed">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status completed">Completed</span>
+                            <div class="project-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        <h3>Climate Impact Assessment</h3>
+                        <p class="project-description">Comprehensive study on climate change effects and mitigation strategies.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2021 - 2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$1.8M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+10</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=3" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card project-3d" data-status="active">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status active">Active</span>
+                            <div class="project-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                        </div>
+                        <h3>Quantum Algorithm Development</h3>
+                        <p class="project-description">Developing novel quantum algorithms for complex problem solving.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023 - 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$2.1M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+8</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=4" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card project-3d" data-status="upcoming">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status upcoming">Upcoming</span>
+                            <div class="project-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                        </div>
+                        <h3>Biotech Innovation Hub</h3>
+                        <p class="project-description">New biotechnology research facility and innovation center.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025 - 2027</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$4.5M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+5</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=5" class="project-link">View Details →</a>
+                    </div>
+                </div>
+                <div class="project-card project-3d" data-status="completed">
+                    <div class="project-card-inner">
+                        <div class="project-header">
+                            <span class="project-status completed">Completed</span>
+                            <div class="project-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                        </div>
+                        <h3>Advanced Materials Synthesis</h3>
+                        <p class="project-description">Development of new materials for energy storage applications.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2020 - 2022</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$1.5M Funding</span>
+                            </div>
+                        </div>
+                        <div class="project-team">
+                            <div class="team-avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <span class="team-count">+7</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html?id=6" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Research Institute</h4>
+                    <p>Advancing knowledge through innovative research and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="datasets.html">Datasets</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="ethics.html">Ethics Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Research Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
+
